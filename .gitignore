@@ -1,0 +1,18 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+
+# Pruebas
+test-results
+playwright-report
+blob-report
+e2e/fixtures/*.wav
+
+# Editores y sistema
+.idea
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.log

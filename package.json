@@ -1,0 +1,42 @@
+{
+  "name": "signal-simulator",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Simulador educativo de modulaciones digitales binarias (ASK, OOK, FSK y BPSK) que se ejecuta en el navegador.",
+  "type": "module",
+  "engines": {
+    "node": "^24.0.0 || >=26.0.0",
+    "npm": ">=11.3.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "lint": "oxlint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test --project=chromium --project=firefox-smoke",
+    "e2e:win": "playwright test --project=chrome --project=msedge",
+    "e2e:deployed": "playwright test --project=deployed",
+    "check:bundle": "node scripts/check-bundle.mjs"
+  },
+  "dependencies": {
+    "plotly.js-basic-dist-min": "4.1.1",
+    "plotly.js-locales": "4.1.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/audioworklet": "0.0.100",
+    "@types/node": "24.19.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "oxlint": "1.86.0",
+    "plotly.js-dist-min": "4.1.1",
+    "typescript": "6.0.3",
+    "vite": "8.3.1",
+    "vitest": "5.0.2"
+  }
+}

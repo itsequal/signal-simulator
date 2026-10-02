@@ -1,0 +1,56 @@
+:root {
+  --color-bg: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-border: #d4d8de;
+  --color-text: #1a1a1a;
+  --color-muted: #4a5260;
+  --color-focus: #0b5cad;
+  --color-error: #a4161a;
+  --color-error-bg: #fdecec;
+  --color-warning: #7a4d00;
+  --color-warning-bg: #fff4dc;
+  --color-info-bg: #eaf2fb;
+  --color-ok: #1b6e3a;
+  --color-ok-bg: #e5f4ea;
+  --color-nrz: #000000;
+  --color-carrier: #0072b2;
+  --color-modulated: #d55e00;
+  --color-original: #009e73;
+  --color-tone: #cc79a7;
+  --radius: 6px;
+  --gap: 12px;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Mono', 'Consolas', 'Liberation Mono', monospace;
+  color-scheme: light;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
