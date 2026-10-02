@@ -26,17 +26,4 @@ npm run e2e
 ```
 
 `npm run e2e` construye la aplicación, la sirve bajo `/pages-test/` y la prueba en Chromium (con micrófono sintético) y, en el humo, en Firefox. `npm run e2e:win` usa Chrome y Edge instalados. La comprobación con micrófono y altavoces reales está en `docs/verificacion-manual.md` y no la sustituyen estas pruebas.
-
-## Publicación
-
-El flujo `.github/workflows/pages.yml` instala con `npm ci`, ejecuta lint, pruebas y build, y publica `dist` en GitHub Pages al empujar a `main`.
-
-- Repositorio de proyecto: la base es `/<REPOSITORIO>/` y la dirección queda `https://<USUARIO_GITHUB>.github.io/<REPOSITORIO>/`.
-- Repositorio `<USUARIO_GITHUB>.github.io`: la base es `/`.
-- Dominio propio: define la variable de repositorio `BASE_PATH` como `/`.
-
-En el repositorio, Settings → Pages → Source debe ser GitHub Actions.
-
-## Qué se puede cambiar
-
 Las frecuencias, tasas, límites y colores iniciales están en `src/config/constants.ts`. Cambiarlos obliga a revisar las pruebas que dependen de esos números.
