@@ -19,6 +19,3 @@ npm run lint
 npm run build
 npm run e2e
 ```
-
-`npm run e2e` construye la aplicación, la sirve bajo `/pages-test/` y la prueba en Chromium (con micrófono sintético) y, en el humo, en Firefox. `npm run e2e:win` usa Chrome y Edge instalados. La comprobación con micrófono y altavoces reales está en `docs/verificacion-manual.md` y no la sustituyen estas pruebas.
-Las frecuencias, tasas, límites y colores iniciales están en `src/config/constants.ts`. Cambiarlos obliga a revisar las pruebas que dependen de esos números.
