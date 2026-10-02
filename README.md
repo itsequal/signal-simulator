@@ -1,15 +1,10 @@
 # Simulador de modulaciones digitales binarias
 
-Laboratorio educativo que se ejecuta en el navegador. Genera y compara ASK, OOK, FSK binaria de fase continua y BPSK a partir de una secuencia de bits, de un texto UTF-8 o de una grabación de voz.
-
-No demodula, no recupera la voz y no envía nada a un servidor. Los bits, el texto y las grabaciones viven sólo en la pestaña y se pierden al recargar.
-
 ## Requisitos
 
-- Node.js 24 (o 26 o posterior) y npm 11.3 o posterior. El archivo `.nvmrc` pide la 24.
-- En esta máquina puede haber un `npm` 9 antiguo con prioridad en el `PATH`. Usa el npm que acompaña a Node 24 antes de instalar.
+- Node.js 24 
 
-## Puesta en marcha
+## Inicializacion
 
 ```bash
 npm ci
